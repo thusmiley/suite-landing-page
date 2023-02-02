@@ -272,6 +272,8 @@ header .cta:hover {
 .jeremy picture {
   position: absolute;
   top: -310px;
+  width: 100%;
+  left: 0;
 }
 
 .curve-line2 {
@@ -308,6 +310,7 @@ header .cta:hover {
     width: 100%;
   }
   .jeremy picture {
+    width: auto;
     top: -195px;
     left: 160px;
   }
@@ -337,7 +340,7 @@ header .cta:hover {
     margin: 0 auto;
   }
   .jeremy picture {
-    top: -180px;
+    top: -195px;
     left: 40px;
   }
 }
@@ -347,9 +350,7 @@ header .cta:hover {
     border-radius: 0;
   }
   .jeremy picture {
-    top: -160px;
-    left: 40px;
-    width: 70%;
+    left: 20px;
   }
 }
 footer {
@@ -398,11 +399,5 @@ footer p {
   }
   .footer-wrapper p {
     margin: 33px 0;
-  }
-}
-@media only screen and (max-width: 350px) {
-  footer {
-    padding: 190px 0 80px 0;
-    margin-top: 850px;
   }
 }/*# sourceMappingURL=style.css.map */
