@@ -62,14 +62,15 @@ a
 @media only screen and (max-width: 1120px) 
     .container
         width: 689px   
+// @media only screen and (max-width: 690px) 
+//     .container
+//         width: 343px   
 @media only screen and (max-width: 690px) 
-    .container
-        width: 343px   
-@media only screen and (max-width: 350px) 
     .container
         width: 100%
         padding-left: calc(8px + 1.5625vw)
         padding-right: calc(8px + 1.5625vw)
+        margin: auto
 
 // Header    
 header
@@ -175,23 +176,34 @@ header
         display: block
     .hero-left
         background-image: none   
-        padding: 30px 0 70px 0
+        padding: 50px 0 70px 0
+        text-align: center
+        justify-content: center
         h1
             font-size: 38px
             line-height: 44px
             letter-spacing: -0.53px
-            padding-top: 30px
+            padding-top: 50px
+            margin: auto
         p
-            margin: 20px 0 40px 0
+            margin: 20px 0 40px 
+            max-width: 100%
     .hero-heading
-        background-position: top 0 right  27px          
+        background-position: top center
         background-size: 50%
     .hero-right
         flex-direction: column
         margin-top: 60px
     .stat:not(:last-child)
         margin-bottom: 32px
-
+@media only screen and (max-width: 480px) 
+    .hero-left
+        text-align: left
+        justify-content: left
+        h1
+            margin: 0
+    .hero-heading
+        background-position: top center            
 // It just works    
 .itworks
     display: flex
@@ -216,19 +228,17 @@ header
         margin: 40px 0  
 .jeremy
     position: relative
-    width: 50%
-    display: block    
-    picture  
+    width: 40%
+    picture  img
         position: absolute
-        top: -310px
-        width: 100%
-        left: 0
+        top: -294px
 
 .curve-line2
     margin: 0 50px        
+    width: 10%  
 .itworks-content
     margin: 88px 0  
-    width: 50%  
+    width: 40%  
     h4
         font-weight: normal
 
@@ -240,6 +250,7 @@ header
         padding-left: 58px
         padding-right: 58px
         bottom: 176px
+        left: center
         h2
             font-size: 40px
             line-height: 48px
@@ -250,13 +261,16 @@ header
         background-position: center
         height: 200px
         width: 100%
-        picture  
-            width: auto
-            top: -195px
-            left: 160px
+        picture img 
+            top: -193px
+            left: 0
+            right: 0
+            margin-left: auto
+            margin-right: auto
 
     .curve-line2
         margin: 50px 0
+        widows: 100%
     .itworks-content
         margin: 0 0 40px 0 
         width: 100%  
@@ -274,15 +288,12 @@ header
         padding-right: 16px
         bottom: 286px
         margin: 0 auto
+        left: 0
     .jeremy picture  
-        top: -195px
-        left: 40px
+        left: center
 @media only screen and (max-width: 350px) 
     .itworks
-        left: 0
         border-radius: 0
-    .jeremy picture  
-        left: 20px
 // Footer      
 footer
     padding: 360px 0 72px 0
@@ -309,13 +320,16 @@ footer
 
 @media only screen and (max-width: 1120px) 
     footer
-        padding: 536px 0 72px 0
+        padding: 550px 0 72px 0
         margin-top: 450px
 @media only screen and (max-width: 690px) 
     footer
         padding: 190px 0 80px 0
-        margin-top: 900px
+        margin-top: 800px
     .footer-wrapper        
         flex-direction: column
         p
             margin: 33px 0
+@media only screen and (max-width: 480px) 
+    footer
+        margin-top: 850px
