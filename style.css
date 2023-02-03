@@ -44,8 +44,7 @@ p {
   letter-spacing: 0.09px;
 }
 
-img,
-picture {
+img {
   display: block;
   max-width: 100%;
 }
@@ -279,7 +278,7 @@ header .container .cta:hover {
   position: relative;
   width: 40%;
 }
-.jeremy picture img {
+.jeremy img {
   position: absolute;
   top: -304px;
 }
@@ -322,7 +321,7 @@ header .container .cta:hover {
     height: 200px;
     width: 100%;
   }
-  .jeremy picture img {
+  .jeremy img {
     top: -193px;
     left: 0;
     right: 0;
