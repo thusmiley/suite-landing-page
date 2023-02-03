@@ -73,10 +73,7 @@ a {
 }
 @media only screen and (max-width: 690px) {
   .container {
-    width: 100%;
-    padding-left: calc(8px + 1.5625vw);
-    padding-right: calc(8px + 1.5625vw);
-    margin: auto;
+    width: 343px;
   }
 }
 header {
@@ -102,6 +99,13 @@ header .cta:hover {
   header .cta {
     font-size: 14px;
     padding: 12px 15px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  header {
+    width: auto;
+    padding-left: calc(8px + 1.5625vw);
+    padding-right: calc(8px + 1.5625vw);
   }
 }
 .hero {
@@ -213,8 +217,6 @@ header .cta:hover {
   .hero-left {
     background-image: none;
     padding: 50px 0 70px 0;
-    text-align: center;
-    justify-content: center;
   }
   .hero-left h1 {
     font-size: 38px;
@@ -239,16 +241,11 @@ header .cta:hover {
     margin-bottom: 32px;
   }
 }
-@media only screen and (max-width: 480px) {
-  .hero-left {
-    text-align: left;
-    justify-content: left;
-  }
-  .hero-left h1 {
-    margin: 0;
-  }
-  .hero-heading {
-    background-position: top center;
+@media only screen and (max-width: 690px) {
+  .hero {
+    width: 100%;
+    padding-left: calc(8px + 1.5625vw);
+    padding-right: calc(8px + 1.5625vw);
   }
 }
 .itworks {
@@ -351,7 +348,12 @@ header .cta:hover {
     padding-right: 16px;
     bottom: 286px;
     margin: 0 auto;
-    left: 0;
+    left: center;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .itworks {
+    border-radius: 0;
   }
 }
 footer {
@@ -393,17 +395,12 @@ footer p {
 @media only screen and (max-width: 690px) {
   footer {
     padding: 190px 0 80px 0;
-    margin-top: 800px;
+    margin-top: 900px;
   }
   .footer-wrapper {
     flex-direction: column;
   }
   .footer-wrapper p {
     margin: 33px 0;
-  }
-}
-@media only screen and (max-width: 480px) {
-  footer {
-    margin-top: 850px;
   }
 }/*# sourceMappingURL=style.css.map */
