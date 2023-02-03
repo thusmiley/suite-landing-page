@@ -44,7 +44,8 @@ p {
   letter-spacing: 0.09px;
 }
 
-img {
+img,
+picture {
   display: block;
   max-width: 100%;
 }
@@ -329,7 +330,6 @@ header .cta:hover {
   }
   .curve-line2 {
     margin: 50px 0;
-    widows: 100%;
   }
   .itworks-content {
     margin: 0 0 40px 0;
@@ -353,14 +353,6 @@ header .cta:hover {
     bottom: 286px;
     margin: 0 auto;
     left: 0;
-  }
-  .jeremy picture {
-    left: center;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .itworks {
-    border-radius: 0;
   }
 }
 footer {
