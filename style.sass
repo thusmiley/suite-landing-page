@@ -62,13 +62,17 @@ a
 
 @media only screen and (max-width: 1120px) 
     .container
-        width: 689px   
+       width: 689px   
 @media only screen and (max-width: 690px) 
     .container
         width: 343px  
-
+@media only screen and (max-width: 480px) 
+    .container
+        width: 100%
+        padding-left: calc(8px + 1.5625vw)
+        padding-right: calc(8px + 1.5625vw)
 // Header    
-header
+header .container
     display: flex
     justify-content: space-between
     align-items: center    
@@ -78,19 +82,15 @@ header
         background-color: $darkblue
 
 @media only screen and (max-width: 1120px) 
-    header
+    header .container
         padding-top: 40px
 @media only screen and (max-width: 690px) 
-    header
+    header .container
         padding-top: 24px
         .cta
             font-size: 14px
             padding: 12px 15px
-@media only screen and (max-width: 480px) 
-    header 
-        width: 100%
-        padding-left: calc(8px + 1.5625vw)
-        padding-right: calc(8px + 1.5625vw)
+
 // Hero        
 .hero
     margin-top: 67px  
@@ -196,9 +196,11 @@ header
         
 @media only screen and (max-width: 480px) 
     .hero
-        width: 100%
-        padding-left: calc(8px + 1.5625vw)
-        padding-right: calc(8px + 1.5625vw)        
+        margin-top: 0 
+    .hero-left
+        h1
+            margin-left: 0
+        
 // It just works    
 .itworks
     display: flex
@@ -283,7 +285,13 @@ header
         margin: 0 auto
         left: center
 
-
+@media only screen and (max-width: 480px) 
+    .itworks .container
+        width: 343px
+        padding-left: 0
+        padding-right: 0
+    .itworks
+        left: 0        
 // Footer      
 footer
     padding: 360px 0 72px 0

@@ -76,36 +76,36 @@ a {
     width: 343px;
   }
 }
-header {
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding-left: calc(8px + 1.5625vw);
+    padding-right: calc(8px + 1.5625vw);
+  }
+}
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 50px;
 }
-header .cta:hover {
+header .container .cta:hover {
   color: #FAF8F6;
   background-color: #172339;
 }
 
 @media only screen and (max-width: 1120px) {
-  header {
+  header .container {
     padding-top: 40px;
   }
 }
 @media only screen and (max-width: 690px) {
-  header {
+  header .container {
     padding-top: 24px;
   }
-  header .cta {
+  header .container .cta {
     font-size: 14px;
     padding: 12px 15px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  header {
-    width: 100%;
-    padding-left: calc(8px + 1.5625vw);
-    padding-right: calc(8px + 1.5625vw);
   }
 }
 .hero {
@@ -243,9 +243,10 @@ header .cta:hover {
 }
 @media only screen and (max-width: 480px) {
   .hero {
-    width: 100%;
-    padding-left: calc(8px + 1.5625vw);
-    padding-right: calc(8px + 1.5625vw);
+    margin-top: 0;
+  }
+  .hero-left h1 {
+    margin-left: 0;
   }
 }
 .itworks {
@@ -349,6 +350,16 @@ header .cta:hover {
     bottom: 286px;
     margin: 0 auto;
     left: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .itworks .container {
+    width: 343px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .itworks {
+    left: 0;
   }
 }
 footer {
