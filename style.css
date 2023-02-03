@@ -284,6 +284,10 @@ header .container .cta:hover {
   top: -304px;
 }
 
+.jeremy-small {
+  display: none;
+}
+
 .curve-line2 {
   margin: 0 50px;
 }
@@ -324,6 +328,12 @@ header .container .cta:hover {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+  .jeremy-large {
+    display: none;
+  }
+  .jeremy-small {
+    display: block;
   }
   .curve-line2 {
     margin: 50px 0;
